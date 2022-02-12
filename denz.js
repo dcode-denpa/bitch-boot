@@ -104,7 +104,7 @@ battery: "" || "Tidak Terdeteksi",
 isCharge: "" || false
 }
 offline = false
-publik = false
+publik = true
 bugc = false
 waktuafk = 'Nothing'
 alasanafk = 'Nothing'
@@ -116,7 +116,7 @@ nopref = false
 allpref = true
 autoread = false
 autocomposing = false
-autorecording = false
+autorecording = true
 
 // APIKEY
 HunterApi = settings.HunterApi
@@ -283,7 +283,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumber = ["6285866295942@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
+		const ownerNumber = [{NomorOwner}@s.whatsapp.net]
         const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
